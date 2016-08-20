@@ -1,0 +1,9 @@
+
+{
+  "name": "nodejs-ko-twitter",
+  "description": "tweet nodejs-ko blog posts",
+  "memory": 128,
+  "timeout": 30,
+  "role": "arn:aws:iam::410655858509:role/nodejs-ko-twitter_lambda_function",
+  "environment": {}
+}

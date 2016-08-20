@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-ko-feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -t 10000 test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "feedparser": "^1.1.4",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
