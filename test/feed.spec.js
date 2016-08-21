@@ -1,4 +1,4 @@
-const feed = require('../feed');
+const feed = require('../functions/tweet/feed');
 const expect = require('chai').expect;
 
 describe('Feed', () => {
@@ -12,7 +12,7 @@ describe('Feed', () => {
     });
   });
 
-  it.only('should normalize posts', () => {
+  it('should normalize posts', () => {
     let posts = [
       { title: 'Node v4.5.0(LTS)',
         description: '',

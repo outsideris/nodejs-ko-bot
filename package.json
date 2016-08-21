@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-ko-feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "find ./functions/* -name package.json -maxdepth 1 -execdir npm install \\;",
+    "test": "./node_modules/mocha/bin/mocha -t 10000 test"
+  },
+  "author": {
+    "name": "\"Outsider\" Jeonghoon Byun",
+    "email": "outsideris@gmail.com",
+    "url": "https://github.com/outsideris"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/outsideris/nodejs-ko-tweet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/outsideris/nodejs-ko-tweet/issues"
+  },
+  "private": true,
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/outsideris/nodejs-ko-tweet/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/outsider/nodejs-ko-tweet",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
