@@ -30,6 +30,7 @@
   "dependencies": {
   },
   "devDependencies": {
+    "aws-sdk": "^2.5.2",
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
   }
