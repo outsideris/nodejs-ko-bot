@@ -15,7 +15,7 @@ module.exports = {
     req.on('error', (error) => { cb(error); });
     req.on('response', function(res) {
       console.log('received feeds');
-      
+
       if (res.statusCode != 200) { return this.emit('error', new Error('Bad status code')); }
       this.pipe(feedparser);
     });
@@ -34,5 +34,8 @@ module.exports = {
     console.log('normalizing posts');
 
     return posts.map((p) => { return { title: p.title, link: p.link }; });
+  },
+  findNotInHistory: (posts, history) => {
+    return posts.filter((p) => !~history.findIndex((h) => h.link === p.link));
   }
 }

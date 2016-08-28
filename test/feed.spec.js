@@ -42,4 +42,19 @@ describe('Feed', () => {
     expect(normalizedFeed[1]).to.have.property('title');
     expect(normalizedFeed[1]).to.have.property('link');
   });
+
+  it('should find posts that are not in history by link', () => {
+    const posts = [
+      {title: 'title1', link: 'https://url/1'},
+      {title: 'title2', link: 'https://url/2'},
+      {title: 'title3', link: 'https://url/3'}
+    ];
+    const history = [
+      {title: 'title1', link: 'https://url/1'},
+      {title: 'title2', link: 'https://url/2'}
+    ];
+    const unposted = feed.findNotInHistory(posts, history);
+    expect(unposted.length).to.equal(1);
+    expect(unposted[0]).to.have.property('link').to.equal(posts[2].link);
+  });
 });
