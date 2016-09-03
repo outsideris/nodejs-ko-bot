@@ -1,1 +1,3 @@
-= Tweeter batch for [nodejs-ko](https://github.com/nodejs/nodejs-ko) on Lambda
+= nodejs-ko bot
+
+AWS lambda function collection for link:https://github.com/nodejs/nodejs-ko[nodejs-ko] for helping to manage nodejs-ko automatically such as tweeting, deployment, so on.

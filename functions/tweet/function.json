@@ -1,0 +1,11 @@
+
+{
+  "name": "nodejs-ko-tweet",
+  "description": "tweet new blog posts from a nodejs-ko blog",
+  "memory": 128,
+  "timeout": 30,
+  "environment": {
+    "BUCKET": "nodejs-ko",
+    "POSTED_HISTORY_KEY": "history.json"
+  }
+}

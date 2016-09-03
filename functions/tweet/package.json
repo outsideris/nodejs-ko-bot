@@ -1,10 +1,10 @@
 {
-  "name": "nodejs-ko-feed",
+  "name": "nodejs-ko-tweet",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": {
-    "name": "\"Outsider\" Jeonghoon Byun",
+    "name": "Outsider",
     "email": "outsideris@gmail.com",
     "url": "https://github.com/outsideris"
   },

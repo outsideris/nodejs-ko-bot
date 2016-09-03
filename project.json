@@ -1,12 +1,8 @@
 
 {
-  "name": "nodejs-ko-twitter",
-  "description": "tweet nodejs-ko blog posts",
+  "name": "nodejs-ko-bot",
+  "description": "help to mange nodejs-ko such as tweeting, deployments, so on",
   "memory": 128,
   "timeout": 30,
-  "role": "arn:aws:iam::410655858509:role/nodejs-ko-twitter_lambda_function",
-  "environment": {
-    "BUCKET": "nodejs-ko",
-    "POSTED_HISTORY_KEY": "history.json"
-  }
+  "role": "arn:aws:iam::410655858509:role/nodejs-ko-twitter_lambda_function"
 }
