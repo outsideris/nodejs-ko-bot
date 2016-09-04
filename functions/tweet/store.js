@@ -18,10 +18,12 @@ module.exports = {
         if (body && body.history) { history = body.history; }
       }
 
+      console.log('current history:', history.length, history)
       cb(null, history);
     });
   },
   saveHistory: (history, cb) => {
+    console.log('history to save:', history.length, history);
     if (!history) { cb(new Error('history is required.')); }
 
     history = JSON.stringify({history: history});

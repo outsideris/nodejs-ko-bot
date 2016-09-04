@@ -23,12 +23,10 @@ module.exports = {
     let posts = [];
     feedparser.on('error', (error) => { cb(error); });
     feedparser.on('readable', function() {
-      console.log('parsing feeds');
-
       let item;
       while (item = this.read()) { posts.push(item); }
     });
-    feedparser.on('end', function() { cb(null, posts); });
+    feedparser.on('end', function() { console.log('parsed feeds'); cb(null, posts); });
   },
   normalize: (posts) => {
     console.log('normalizing posts');
