@@ -12,6 +12,7 @@
   "licenses": "MIT",
   "dependencies": {
     "feedparser": "^1.1.4",
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "twitter": "^1.4.0"
   }
 }

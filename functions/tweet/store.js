@@ -3,8 +3,8 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
-const BUCKET = process.env.BUCKET || 'nodejs-ko';
-const POSTED_HISTORY_KEY = process.env.POSTED_HISTORY_KEY || 'history-test.json';
+const BUCKET = process.env.AWS_S3_BUCKET || 'nodejs-ko';
+const POSTED_HISTORY_KEY = process.env.AWS_S3_POSTED_HISTORY_KEY || 'history-test.json';
 
 module.exports = {
   getHistory: (cb) => {

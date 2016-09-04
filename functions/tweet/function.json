@@ -5,7 +5,11 @@
   "memory": 128,
   "timeout": 30,
   "environment": {
-    "BUCKET": "nodejs-ko",
-    "POSTED_HISTORY_KEY": "history.json"
+    "AWS_S3_BUCKET": "nodejs-ko",
+    "AWS_S3_POSTED_HISTORY_KEY": "history.json",
+    "TWITTER_CONSUMER_KEY": "",
+    "TWITTER_CONSUMER_SECRET": "",
+    "TWITTER_ACCESS_TOKEN_KEY": "",
+    "TWITTER_ACCESS_TOKEN_SECRET": ""
   }
 }
