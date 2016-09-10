@@ -3,6 +3,6 @@
   "name": "nodejs-ko-bot",
   "description": "help to mange nodejs-ko such as tweeting, deployments, so on",
   "memory": 128,
-  "timeout": 30,
+  "timeout": 180,
   "role": "arn:aws:iam::410655858509:role/nodejs-ko-twitter_lambda_function"
 }
